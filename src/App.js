@@ -6,6 +6,10 @@ function App() {
       <header className="App-header">
         <h1>Trevor Sinnott</h1>
         <h2>Front-End Developer</h2>
+        <a href="https://github.com/trevorsinnott">github</a>
+        <a href="https://www.linkedin.com/in/trevor-sinnott-1a8809174/">
+          linkedin
+        </a>
       </header>
       <article>
         <h1>About</h1>
