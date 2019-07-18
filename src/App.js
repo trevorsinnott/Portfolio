@@ -33,6 +33,35 @@ function App() {
           <li>Ruby</li>
         </ul>
       </article>
+      <article>
+        <h1>Projects</h1>
+        <div>
+          <h2>Notes App</h2>
+          <p>
+            A notes app PWA that allows users to create, edit and delete notes
+            and format using markdown.
+          </p>
+          <a href="https://notes-app.now.sh/">Live Site</a>
+          <a href="https://github.com/trevorsinnott/reactNotesApp">Github</a>
+        </div>
+        <div>
+          <h2>My Odin Blog</h2>
+          <p>
+            A responsive blog and personal site built using Ruby on Rails. Has
+            articles, projects and contact.
+          </p>
+          <a href="https://my-odin-blog.herokuapp.com/">Live Site</a>
+          <a href="https://github.com/trevorsinnott/my_odin_blog">Github</a>
+        </div>
+        <div>
+          <h2>Calculator</h2>
+          <p>
+            A simple calculator built using vanilla JavaScript, HTML and CSS.
+          </p>
+          <a href="https://trevorsinnott.github.io/calculator/">Live Site</a>
+          <a href="https://github.com/trevorsinnott/calculator">Github</a>
+        </div>
+      </article>
     </div>
   );
 }
