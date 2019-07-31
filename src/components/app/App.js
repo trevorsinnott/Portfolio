@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import Project from "../project/Project";
+import Header from "../header/Header";
+import About from "../about/About";
+import { Container, CssBaseline } from "@material-ui/core";
+import Skills from "../skills/Skills";
+import Projects from "../projects/Projects";
 
 class App extends Component {
   constructor() {
@@ -32,54 +36,16 @@ class App extends Component {
   }
 
   render() {
-    const projects = this.state.projects.map(project => {
-      return (
-        <Project
-          title={project.title}
-          description={project.description}
-          liveLink={project.liveLink}
-          codeLink={project.codeLink}
-        />
-      );
-    });
-
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Trevor Sinnott</h1>
-          <h2>Front-End Developer</h2>
-          <div>
-            <a href="https://github.com/trevorsinnott">Github</a>
-            <a href="https://www.linkedin.com/in/trevor-sinnott-1a8809174/">
-              Linkedin
-            </a>
-          </div>
-        </header>
-        <article>
-          <h1>About</h1>
-          <p>
-            Hi! I'm Trevor, a front-end developer who loves learning and
-            building new things. Whether that's making PWA's with React, going
-            to developer meetups, or writing command line games in Ruby. I love
-            surrounding myself with people who are passionate and curious about
-            what they do. If that means you, please get in touch!
-          </p>
-        </article>
-        <article>
-          <h1>Skills</h1>
-          <ul>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Ruby</li>
-          </ul>
-        </article>
-        <article>
-          <h1>Projects</h1>
-          {projects}
-        </article>
-      </div>
+      <React.Fragment>
+        <CssBaseline />
+        <Header />
+        <Container>
+          <About />
+          <Skills />
+          <Projects projectDetails={this.state.projects} />
+        </Container>
+      </React.Fragment>
     );
   }
 }

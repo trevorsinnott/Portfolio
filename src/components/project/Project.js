@@ -1,13 +1,18 @@
 import React from "react";
+import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 
 function Project(props) {
   return (
-    <div>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-      <a href={props.liveLink}>Live Site</a>
-      <a href={props.codeLink}>Github</a>
-    </div>
+    <Grid item xs>
+      <Card>
+        <CardContent>
+          <Typography variant="h2">{props.title}</Typography>
+          <p>{props.description}</p>
+          <a href={props.liveLink}>Live Site</a>
+          <a href={props.codeLink}>Github</a>
+        </CardContent>
+      </Card>
+    </Grid>
   );
 }
 
