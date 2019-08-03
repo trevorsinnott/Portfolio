@@ -20,6 +20,8 @@ function Projects(props) {
         description={project.description}
         liveLink={project.liveLink}
         codeLink={project.codeLink}
+        image={project.image}
+        color={project.color}
       />
     );
   });
@@ -31,7 +33,7 @@ function Projects(props) {
       <Typography variant="h2" gutterBottom>
         Projects
       </Typography>
-      <Grid container spacing={3}>
+      <Grid container justify="space-evenly" spacing={3}>
         {projectList}
       </Grid>
     </Container>

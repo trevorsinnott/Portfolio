@@ -1,16 +1,46 @@
 import React from "react";
-import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Grid,
+  CardMedia,
+  makeStyles,
+  CardActionArea,
+  CardActions,
+  Button
+} from "@material-ui/core";
+
+const useStyles = makeStyles({
+  media: {
+    height: 200,
+    backgroundSize: "contain",
+    backgroundPosition: "center"
+  }
+});
 
 function Project(props) {
+  const classes = useStyles();
+
   return (
-    <Grid item xs>
+    <Grid item lg={4} md={6} sm={12}>
       <Card>
+        <CardMedia
+          href={props.liveLink}
+          className={classes.media}
+          image={props.image}
+          style={{ backgroundColor: props.color }}
+        />
         <CardContent>
           <Typography variant="h2">{props.title}</Typography>
           <p>{props.description}</p>
-          <a href={props.liveLink}>Live Site</a>
-          <a href={props.codeLink}>Github</a>
         </CardContent>
+        <CardActions>
+          <Button href={props.liveLink}>Live Site</Button>
+          <Button href={props.codeLink}>Github</Button>
+          {/* <a href={}>Live Site</a>
+          <a href={props.codeLink}>Github</a> */}
+        </CardActions>
       </Card>
     </Grid>
   );
