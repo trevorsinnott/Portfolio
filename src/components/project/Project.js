@@ -6,7 +6,6 @@ import {
   Grid,
   CardMedia,
   makeStyles,
-  CardActionArea,
   CardActions,
   Button
 } from "@material-ui/core";
