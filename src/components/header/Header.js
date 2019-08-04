@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() => ({
   hero: {
-    height: "100vh",
+    height: "80vh",
     borderRadius: "0",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -16,11 +16,11 @@ const useStyles = makeStyles(() => ({
       url(https://images.unsplash.com/photo-1519331582073-283f1a211a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2038&q=80)`
   },
   title: {
-    height: "100vh",
+    height: "80vh",
     backgroundColor: "rgb(63, 81, 181, 0)"
   },
   scroll: {
-    height: "100vh"
+    height: "80vh"
   }
 }));
 
@@ -34,25 +34,8 @@ function Header() {
         <Box m="auto">
           <Typography variant="h1">Trevor Sinnott</Typography>
           <Typography variant="h4">Front-End Developer</Typography>
-          {/* <Link
-          align="center"
-          variant="h5"
-          href="https://github.com/trevorsinnott"
-        >
-          <FontAwesomeIcon icon={faGithub} />
-          Github
-        </Link>
-        <Link
-          align="center"
-          variant="h5"
-          href="https://www.linkedin.com/in/trevor-sinnott-1a8809174/"
-        >
-          <FontAwesomeIcon icon={faLinkedin} />
-          Linkedin
-        </Link> */}
         </Box>
       </AppBar>
-      {/* </HideOnScroll> */}
     </Box>
   );
 }
