@@ -18,7 +18,7 @@
       { "src": "/avatar.jpg", "dest": "/avatar.jpg" },
       { "src": "/calculator.png", "dest": "/calculator.png" },
       { "src": "/notesApp.png", "dest": "/notesApp.png" },
-      { "src": "odinBlog.png", "dest": "odinBlog.png" },
+      { "src": "/odinBlog.png", "dest": "/odinBlog.png" },
       { "src": "/asset-manifest.json", "dest": "/asset-manifest.json" },
       { "src": "/manifest.json", "dest": "/manifest.json" },
       { "src": "/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
