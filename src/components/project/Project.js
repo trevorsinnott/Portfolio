@@ -22,7 +22,7 @@ function Project(props) {
   const classes = useStyles();
 
   return (
-    <Grid item lg={4} md={6} sm={12}>
+    <Grid item lg={4} md={6} sm={12} xs={12}>
       <Card>
         <CardMedia
           href={props.liveLink}
