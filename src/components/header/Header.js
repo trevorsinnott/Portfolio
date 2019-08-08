@@ -6,6 +6,7 @@ const useStyles = makeStyles(() => ({
   hero: {
     color: "#fff",
     height: "80vh",
+    fontSize: "1rem",
     borderRadius: "0",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -15,6 +16,17 @@ const useStyles = makeStyles(() => ({
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)),
       url(https://images.unsplash.com/photo-1519331582073-283f1a211a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2038&q=80)`
+  },
+  title: {
+    fontSize: "6em"
+  },
+  subTitle: {
+    fontSize: "2.125em"
+  },
+  "@media (max-width: 600px)": {
+    hero: {
+      fontSize: ".5rem"
+    }
   }
 }));
 
@@ -29,10 +41,14 @@ function Header() {
       className={classes.hero}
     >
       <Grid item>
-        <Typography variant="h1">Trevor Sinnott</Typography>
+        <Typography variant="h1" className={classes.title}>
+          Trevor Sinnott
+        </Typography>
       </Grid>
       <Grid item>
-        <Typography variant="h4">Front-End Developer</Typography>
+        <Typography variant="h4" className={classes.subTitle}>
+          Front-End Developer
+        </Typography>
       </Grid>
     </Grid>
   );

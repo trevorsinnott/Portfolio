@@ -26,17 +26,17 @@ function About() {
     <Grid
       className={classes.about}
       container
-      spacing={3}
-      direction="column"
+      spacing={0}
+      direction="row"
       alignItems="center"
-      justify="space-evenly"
+      justify="center"
     >
       <Grid
         container
         item
-        lg={4}
-        md={4}
-        sm={4}
+        lg={12}
+        md={12}
+        sm={12}
         justify="center"
         alignItems="center"
       >
@@ -44,7 +44,7 @@ function About() {
           TS
         </Avatar>
       </Grid>
-      <Grid item lg={8} md={8} sm={8}>
+      <Grid item lg={10} md={10} sm={10}>
         <Typography className={classes.content} variant="body1">
           Hi! I'm Trevor, and I'm excited about learning and building new
           things. Whether that's making PWA's with React, going to developer
