@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, makeStyles, Avatar, Grid } from "@material-ui/core";
-import { loadCSS } from "fg-loadcss";
 
 const useStyles = makeStyles(() => ({
   about: {
@@ -14,13 +13,6 @@ const useStyles = makeStyles(() => ({
 
 function About() {
   const classes = useStyles();
-
-  React.useEffect(() => {
-    loadCSS(
-      "https://use.fontawesome.com/releases/v5.1.0/css/all.css",
-      document.querySelector("#font-awesome-css")
-    );
-  }, []);
 
   return (
     <Grid
