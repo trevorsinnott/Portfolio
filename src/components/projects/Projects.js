@@ -28,11 +28,13 @@ function Projects(props) {
   const classes = useStyles();
 
   return (
-    <Grid item className={classes.projects}>
-      <Typography variant="h2" gutterBottom>
-        Projects
+    <Grid item container justify="center" className={classes.projects}>
+      <Grid item>
+        <Typography variant="h2" gutterBottom>
+          Projects
       </Typography>
-      <Grid container justify="space-evenly" spacing={3}>
+      </Grid>
+      <Grid container item justify="space-evenly" spacing={3}>
         {projectList}
       </Grid>
     </Grid>
