@@ -13,7 +13,6 @@ import {
 
 const useStyles = makeStyles(theme => ({
   skills: {
-    height: "100vh",
     fontSize: "5rem"
   }
 }));
@@ -25,7 +24,6 @@ function Skills() {
 
   return (
     <Container className={classes.skills}>
-      <Typography variant="h2">Skills</Typography>
       <List>
         <ListItem>
           <ListItemIcon>

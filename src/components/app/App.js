@@ -53,7 +53,6 @@ class App extends Component {
         <SocialLinks />
         <Container>
           <About />
-          <Skills />
           <Projects projectDetails={this.state.projects} />
         </Container>
       </ThemeProvider>
