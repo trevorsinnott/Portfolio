@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, makeStyles, Avatar, Grid, Card, CardMedia, CardContent } from "@material-ui/core";
+import { Typography, makeStyles, Container, Grid, Card, CardMedia, CardContent } from "@material-ui/core";
 import Skills from "../skills/Skills";
 
 const useStyles = makeStyles(() => ({
@@ -21,6 +21,7 @@ function About() {
     <Grid
       className={classes.about}
       container
+      item
       spacing={3}
       direction="row"
       alignItems="center"

@@ -6,7 +6,6 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() => ({
   projects: {
-    height: "100vh"
   }
 }));
 
@@ -29,14 +28,14 @@ function Projects(props) {
   const classes = useStyles();
 
   return (
-    <Container className={classes.projects}>
+    <Grid item className={classes.projects}>
       <Typography variant="h2" gutterBottom>
         Projects
       </Typography>
       <Grid container justify="space-evenly" spacing={3}>
         {projectList}
       </Grid>
-    </Container>
+    </Grid>
   );
 }
 

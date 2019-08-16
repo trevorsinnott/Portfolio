@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../header/Header";
 import About from "../about/About";
-import { Container, CssBaseline, createMuiTheme } from "@material-ui/core";
+import { Container, CssBaseline, createMuiTheme, Grid } from "@material-ui/core";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
 import { ThemeProvider } from "@material-ui/styles";
@@ -52,8 +52,10 @@ class App extends Component {
         <Header />
         <SocialLinks />
         <Container>
-          <About />
-          <Projects projectDetails={this.state.projects} />
+          <Grid container spacing={8}>
+            <About />
+            <Projects projectDetails={this.state.projects} />
+          </Grid>
         </Container>
       </ThemeProvider>
     );
