@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
     backgroundImage: `linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)),
-      url(https://images.unsplash.com/photo-1519331582073-283f1a211a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2038&q=80)`
+      url(./background.jpg)`
   },
   title: {
     fontSize: "6em"
