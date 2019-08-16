@@ -7,7 +7,9 @@ const useStyles = makeStyles(() => ({
     height: "120vh"
   },
   avatar: {
-    height: "60%"
+    height: 0,
+    paddingTop: '54.25%',
+    backgroundPosition: "top"
   },
   card: {
     height: "100vh"
@@ -30,7 +32,7 @@ function About() {
         <Skills />
       </Grid>
       <Grid item lg={9} md={9} sm={9}>
-        <Card className={classes.card}>
+        <Card>
           <CardMedia className={classes.avatar} image="./avatar.jpg" />
           <CardContent>
             <Typography className={classes.content} variant="body1">
