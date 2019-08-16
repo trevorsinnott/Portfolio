@@ -27,10 +27,7 @@ function About() {
       alignItems="center"
       justify="center"
     >
-      <Grid item lg={3} md={3} sm={3}>
-        <Skills />
-      </Grid>
-      <Grid item lg={9} md={9} sm={9}>
+      <Grid item xs={12} sm={6}>
         <Card>
           <CardMedia className={classes.avatar} image="./avatar.jpg" />
           <CardContent>
@@ -43,6 +40,9 @@ function About() {
             </Typography>
           </CardContent>
         </Card>
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        <Skills />
       </Grid>
     </Grid>
   );
