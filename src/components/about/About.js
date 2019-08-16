@@ -1,6 +1,5 @@
 import React from "react";
-import { Typography, makeStyles, Container, Grid, Card, CardMedia, CardContent } from "@material-ui/core";
-import Skills from "../skills/Skills";
+import { Typography, makeStyles, Grid, Card, CardMedia, CardContent } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   about: {

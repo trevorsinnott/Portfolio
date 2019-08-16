@@ -1,18 +1,12 @@
 import React from "react";
 import {
   Typography,
-  List,
-  ListItem,
-  Container,
-  Icon,
-  ListItemIcon,
-  ListItemText,
   SvgIcon,
   makeStyles,
   Grid
 } from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   skills: {
     fontSize: "5rem",
     textAlign: "center"

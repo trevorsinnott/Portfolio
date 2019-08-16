@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Link, Icon, SvgIcon } from "@material-ui/core";
-import clsx from "clsx";
+import { Box, Link, SvgIcon } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() => ({

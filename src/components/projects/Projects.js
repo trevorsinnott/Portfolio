@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../project/Project";
 import uuid from "uuid";
-import { Grid, Typography, Container } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() => ({
