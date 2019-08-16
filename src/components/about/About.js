@@ -20,30 +20,20 @@ function About() {
   return (
     <Grid
       className={classes.about}
-      container
-      item
-      spacing={3}
-      direction="row"
-      alignItems="center"
-      justify="center"
+      item xs={12} sm={6}
     >
-      <Grid item xs={12} sm={6}>
-        <Card>
-          <CardMedia className={classes.avatar} image="./avatar.jpg" />
-          <CardContent>
-            <Typography className={classes.content} variant="body1">
-              Hi! I'm Trevor, and I'm excited about learning and building new
-              things. Whether that's making PWA's with React, going to developer
-              meetups, or writing command line games in Ruby. I love surrounding
-              myself with people who are passionate and curious about what they do.
-              If that means you, please get in touch!
+      <Card>
+        <CardMedia className={classes.avatar} image="./avatar.jpg" />
+        <CardContent>
+          <Typography className={classes.content} variant="body1">
+            Hi! I'm Trevor, and I'm excited about learning and building new
+            things. Whether that's making PWA's with React, going to developer
+            meetups, or writing command line games in Ruby. I love surrounding
+            myself with people who are passionate and curious about what they do.
+            If that means you, please get in touch!
             </Typography>
-          </CardContent>
-        </Card>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <Skills />
-      </Grid>
+        </CardContent>
+      </Card>
     </Grid>
   );
 }

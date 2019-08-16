@@ -54,6 +54,7 @@ class App extends Component {
         <Container style={{ padding: 44 }}>
           <Grid container spacing={8}>
             <About />
+            <Skills />
             <Projects projectDetails={this.state.projects} />
           </Grid>
         </Container>

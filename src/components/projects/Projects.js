@@ -32,7 +32,7 @@ function Projects(props) {
       <Grid item>
         <Typography variant="h2" gutterBottom>
           Projects
-      </Typography>
+        </Typography>
       </Grid>
       <Grid container item justify="space-evenly" spacing={3}>
         {projectList}
