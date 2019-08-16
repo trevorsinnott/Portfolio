@@ -51,7 +51,7 @@ class App extends Component {
         <CssBaseline />
         <Header />
         <SocialLinks />
-        <Container>
+        <Container style={{ padding: 44 }}>
           <Grid container spacing={8}>
             <About />
             <Projects projectDetails={this.state.projects} />
