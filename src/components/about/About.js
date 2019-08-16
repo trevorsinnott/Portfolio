@@ -4,7 +4,6 @@ import Skills from "../skills/Skills";
 
 const useStyles = makeStyles(() => ({
   about: {
-    height: "120vh"
   },
   avatar: {
     height: 0,
@@ -12,7 +11,6 @@ const useStyles = makeStyles(() => ({
     backgroundPosition: "top"
   },
   card: {
-    height: "100vh"
   }
 }));
 
@@ -45,7 +43,6 @@ function About() {
           </CardContent>
         </Card>
       </Grid>
-
     </Grid>
   );
 }

@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles(() => ({
   social: {
     display: "flex",
-    height: "20vh",
+    height: "25vh",
     justifyContent: "space-evenly",
     alignItems: "center"
   }

@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 const useStyles = makeStyles(() => ({
   hero: {
     color: "#fff",
-    height: "80vh",
+    height: "75vh",
     fontSize: "1rem",
     borderRadius: "0",
     backgroundSize: "cover",
