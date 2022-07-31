@@ -47,7 +47,7 @@ function Header() {
       </Grid>
       <Grid item>
         <Typography variant="h4" className={classes.subTitle}>
-          Front-End Developer
+          Web Developer
         </Typography>
       </Grid>
     </Grid>

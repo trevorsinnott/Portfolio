@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "../header/Header";
-import About from "../about/About";
+// import About from "../about/About";
 import { Container, CssBaseline, createMuiTheme, Grid } from "@material-ui/core";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
@@ -52,8 +52,8 @@ class App extends Component {
         <Header />
         <SocialLinks />
         <Container style={{ padding: 44 }}>
-          <Grid container spacing={8}>
-            <About />
+          <Grid container spacing={2}>
+            {/* <About /> */}
             <Skills />
             <Projects projectDetails={this.state.projects} />
           </Grid>
