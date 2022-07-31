@@ -50,14 +50,14 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
-        <SocialLinks />
         <Container style={{ padding: 44 }}>
-          <Grid container spacing={2}>
+          <Grid container spacing={10}>
             {/* <About /> */}
-            <Skills />
             <Projects projectDetails={this.state.projects} />
+            <Skills />
           </Grid>
         </Container>
+        <SocialLinks />
       </ThemeProvider>
     );
   }

@@ -27,7 +27,11 @@ const useStyles = makeStyles({
   },
   "@media (max-width: 600px)": {
     content: {
-      fontSize: ".6rem"
+      fontSize: ".6rem",
+    },
+    media: {
+      backgroundColor: "green",
+      display: "none"
     }
   }
 });
