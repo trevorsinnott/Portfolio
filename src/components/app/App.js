@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import Header from "../header/Header";
 // import About from "../about/About";
-import { Container, CssBaseline, createMuiTheme, Grid } from "@material-ui/core";
+import {
+  Container,
+  CssBaseline,
+  createMuiTheme,
+  Grid,
+} from "@material-ui/core";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
 import { ThemeProvider } from "@material-ui/styles";
@@ -21,16 +26,16 @@ class App extends Component {
           liveLink: "https://notes-app.now.sh/",
           codeLink: "https://github.com/trevorsinnott/reactNotesApp",
           image: "./notesApp.png",
-          color: "rgb(63, 81, 181, .4)"
+          color: "rgb(63, 81, 181, .4)",
         },
         {
           title: "My Odin Blog",
           description:
             "A responsive blog and personal site built using Ruby on Rails. Has articles, projects and contact.",
           liveLink: "https://my-odin-blog.herokuapp.com/",
-          codeLink: "https://my-odin-blog.herokuapp.com/",
+          codeLink: "https://github.com/trevorsinnott/my_odin_blog",
           image: "./odinBlog.png",
-          color: "rgb(139, 219, 160, 0.4)"
+          color: "rgb(139, 219, 160, 0.4)",
         },
         {
           title: "Calculator",
@@ -39,9 +44,9 @@ class App extends Component {
           liveLink: "https://trevorsinnott.github.io/calculator/",
           codeLink: "https://github.com/trevorsinnott/calculator",
           image: "./calculator.png",
-          color: "rgb(111, 143, 162, .4)"
-        }
-      ]
+          color: "rgb(111, 143, 162, .4)",
+        },
+      ],
     };
   }
 
