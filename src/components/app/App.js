@@ -46,6 +46,12 @@ class App extends Component {
           image: "./calculator.png",
           color: "rgb(111, 143, 162, .4)",
         },
+        {
+          title: "Bookstore",
+          description: "A Java CRUD app using Servlets, JDBC, MySql and JSP.",
+          codeLink: "https://github.com/trevorsinnott/Bookstore",
+          color: "rgb(111, 143, 162, .4)",
+        },
       ],
     };
   }

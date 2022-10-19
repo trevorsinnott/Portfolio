@@ -7,23 +7,23 @@ import {
   CardMedia,
   makeStyles,
   CardActions,
-  Button
+  Button,
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
   media: {
     height: 200,
     backgroundSize: "contain",
-    backgroundPosition: "center"
+    backgroundPosition: "center",
   },
   content: {
-    fontSize: ".875rem"
+    fontSize: ".875rem",
   },
   title: {
-    fontSize: "4.285em"
+    fontSize: "4.285em",
   },
   subTitle: {
-    fontSize: "1.15em"
+    fontSize: "1.15em",
   },
   "@media (max-width: 600px)": {
     content: {
@@ -31,33 +31,57 @@ const useStyles = makeStyles({
     },
     media: {
       backgroundColor: "green",
-      display: "none"
-    }
-  }
+      display: "none",
+    },
+  },
 });
 
 function Project(props) {
   const classes = useStyles();
 
+  let cardActions;
+  let cardMedia;
+
+  if (props.liveLink != null) {
+    cardActions = (
+      <CardActions>
+        <Button href={props.liveLink}>Live Site</Button>
+        <Button href={props.codeLink}>Github</Button>
+        {/* <a href={}>Live Site</a>
+    <a href={props.codeLink}>Github</a> */}
+      </CardActions>
+    );
+    cardMedia = (
+      <CardMedia
+        href={props.liveLink}
+        className={classes.media}
+        image={props.image}
+        style={{ backgroundColor: props.color }}
+      />
+    );
+  } else {
+    cardActions = (
+      <CardActions>
+        <Button href={props.codeLink}>Github</Button>
+        {/* <a href={}>Live Site</a>
+    <a href={props.codeLink}>Github</a> */}
+      </CardActions>
+    );
+  }
+
   return (
     <Grid item lg={4} md={6} sm={12} xs={12}>
       <Card>
-        <CardMedia
-          href={props.liveLink}
-          className={classes.media}
-          image={props.image}
-          style={{ backgroundColor: props.color }}
-        />
+        {cardMedia}
         <CardContent className={classes.content}>
-          <Typography className={classes.title} variant="h2" gutterBottom>{props.title}</Typography>
-          <Typography className={classes.subTitle} variant="subtitle1">{props.description}</Typography>
+          <Typography className={classes.title} variant="h2" gutterBottom>
+            {props.title}
+          </Typography>
+          <Typography className={classes.subTitle} variant="subtitle1">
+            {props.description}
+          </Typography>
         </CardContent>
-        <CardActions>
-          <Button href={props.liveLink}>Live Site</Button>
-          <Button href={props.codeLink}>Github</Button>
-          {/* <a href={}>Live Site</a>
-          <a href={props.codeLink}>Github</a> */}
-        </CardActions>
+        {cardActions}
       </Card>
     </Grid>
   );
